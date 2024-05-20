@@ -57,7 +57,7 @@ stages:
           - task: KubernetesManifest@0
             inputs:
               action: 'createSecret'
-              namespace: 'default'
+              namespace: 'aksdev01'
               secretType: 'dockerRegistry'
               secretName: '$(acrsecret)'
               dockerRegistryEndpoint: 'SoloAKSRegistry01'
