@@ -78,7 +78,7 @@ stages:
           - task: KubernetesManifest@0
             inputs:
               action: 'deploy'
-              namespace: 'default'
+              namespace: 'aksdev01'
               manifests: |
                 $(Pipeline.Workspace)/manifests/deployment.yml
                 $(Pipeline.Workspace)/manifests/service.yml
